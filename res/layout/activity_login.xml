@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0C0E58"
+    android:layout_gravity="center"
+
+    tools:context=".LoginActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Log in"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="-40dp"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:id="@+id/loginusername"
+        android:layout_width="297dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:ems="10"
+        android:background="#fff"
+        android:inputType="textPersonName"
+        android:hint=" Enter Username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/loginpassword"
+        android:layout_width="297dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:layout_gravity="center"
+
+        android:hint=" Enter Password"
+        android:inputType="textPassword"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginusername" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:background="#890A6D"
+
+        android:textColor="#fff"
+        android:layout_gravity="center"
+
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginpassword" />
+
+</LinearLayout>

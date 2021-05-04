@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page"
+    tools:context=".HomeActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Re-Fix Schedule"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make your Message"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:hint="   Confirm your Event..."
+            android:id="@+id/event"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:textColorHint="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   --------------------------------------------------------------------------------------------------------"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"/>
+
+
+        <TimePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/Time_clock"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time display"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:id="@+id/disp_time"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   --------------------------------------------------------------------------------------------------------"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make a Dates"
+            android:textSize="28dp"
+            android:id="@+id/disp_date"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/calender"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   --------------------------------------------------------------------------------------------------------"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"/>
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:id="@+id/pass_next"
+            android:text="Next"
+            android:textColor="#000000"
+            android:background="@drawable/button_style"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
